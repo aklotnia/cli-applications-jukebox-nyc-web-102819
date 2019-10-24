@@ -47,14 +47,13 @@ end
 def run(songs)
   songs
   puts "Please enter a command:"
-  user_input = gets.strip
+  # user_input = gets.strip
   until user_input == "exit" do
   user_input = gets.strip
     if user_input == 'help'
       help
     elsif user_input == "list"
       list(songs)
-      break
     elsif user_input == "play"
       play(songs)
     end
